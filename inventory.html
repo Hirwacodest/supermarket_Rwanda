@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory - Supermarket Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1> FIVESTAR Supermarket Rwanda - Inventory</h1>
+  <p>Products sold by packs</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="inventory.html">Inventory</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+</nav>
+
+<section class="hero">
+  <h2>Inventory</h2>
+  <p>Check out our bulk products, perfect for families or businesses!</p>
+  <a href="shop.html">Back to Shop</a>
+</section>
+
+<section class="products">
+  <h2>Available Packs</h2>
+  <div class="product-grid">
+
+    <div class="product" data-name="Fresh Milk Box" data-price="8500">
+      <img src="https://via.placeholder.com/200x150?text=Milk+Box" alt="Fresh Milk Box">
+      <h3>Fresh Milk Box</h3>
+      <p>1 Box - 8,500 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Mineral Water" data-price="5000">
+      <img src="https://via.placeholder.com/200x150?text=Mineral+Water" alt="Mineral Water">
+      <h3>Mineral Water</h3>
+      <p>1 Pack - 5,000 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Juice Box" data-price="25000">
+      <img src="https://via.placeholder.com/200x150?text=Juice+Box" alt="Juice Box">
+      <h3>Juice Box</h3>
+      <p>1 Box - 25,000 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="cart">
+  <h2>Mini Cart</h2>
+  <div id="cart-items"></div>
+  <div class="cart-total" id="cart-total">Total: 0 RWF</div>
+  <a href="cart.html" class="checkout">Go to Cart</a>
+</section>
+
+<footer>
+  <p>Contact us on WhatsApp: <a href="https://wa.me/250795878935?text=Hello%20Supermarket">+250 795 878 935</a></p>
+  <p>&copy; 2026 Supermarket Rwanda. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

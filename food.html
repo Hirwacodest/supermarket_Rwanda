@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food - Supermarket Rwanda</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>FIVESTAR Supermarket Rwanda - Food</h1>
+  <p>Fresh food delivered to you</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+</nav>
+
+<section class="hero">
+  <h2>Food</h2>
+  <p>High-quality fresh food to keep you healthy!</p>
+  <a href="shop.html">Back to Shop</a>
+</section>
+
+<section class="products">
+  <h2>Food Products</h2>
+  <div class="product-grid">
+
+    <div class="product" data-name="Fresh Milk" data-price="800">
+      <img src="https://via.placeholder.com/200x150?text=Milk" alt="Fresh Milk">
+      <h3>Fresh Milk</h3>
+      <p>1 liter - 800 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Whole Bread" data-price="500">
+      <img src="https://via.placeholder.com/200x150?text=Bread" alt="Whole Bread">
+      <h3>Whole Bread</h3>
+      <p>1 piece - 500 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Eggs Pack" data-price="1200">
+      <img src="https://via.placeholder.com/200x150?text=Eggs" alt="Eggs">
+      <h3>Eggs Pack</h3>
+      <p>12 eggs - 1,200 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Rice 5kg" data-price="4500">
+      <img src="https://via.placeholder.com/200x150?text=Rice" alt="Rice">
+      <h3>Rice 5kg</h3>
+      <p>5 kg - 4,500 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="cart">
+  <h2>Mini Cart</h2>
+  <div id="cart-items"></div>
+  <div class="cart-total" id="cart-total">Total: 0 RWF</div>
+  <a href="cart.html" class="checkout">Go to Cart</a>
+</section>
+
+<footer>
+  <p>Contact us on WhatsApp: <a href="https://wa.me/250795878935?text=Hello%20Supermarket">+250 795 878 935</a></p>
+  <p>&copy; 2026 Supermarket Rwanda. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIVESTAR SuperMarket</title>
+<link rel="stylesheet" href="style.css">
+<script src="cart.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>FIVESTAR SuperMarket</h1>
+  <p>Fresh products delivered near you</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Welcome to FIVESTAR SuperMarket Rwanda</h2>
+  <p>Affordable prices, fresh products, fast delivery!</p>
+  <a href="shop.html">Shop Now</a>
+</section>
+
+<!-- Categories Section -->
+<section class="categories">
+  <h2>Shop by Category</h2>
+  <a href="food.html">Food</a>
+  <a href="beverages.html">Beverages</a>
+  <a href="snacks.html">Snacks</a>
+  <a href="drinks.html">Drinks</a>
+</section>
+
+<!-- Featured Products -->
+<section class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <div class="product" data-name="Fresh Milk" data-price="1000">
+      <img src="Milk.JPG" alt="Milk">
+      <img src="milk2.JPG" alt="Milk">
+      <h3>Fresh Milk</h3>
+      <p>500ml - 1000 RWF<br>1L - 2500</br></p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Whole Bread" data-price="2000">
+      <img src="Bread.JPG" alt="Bread">
+      <h3>Whole Bread</h3>
+      <p>1 piece - 2,000 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Beverages Assorted" data-price="10000">
+      <img src="bev.JPG" alt="Beverages">
+      <img src="beverage.JPG" alt="Beverages">
+      <h3>Beverages Assorted</h3>
+      <p>Assorted - 10,000 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="product" data-name="Soft Drinks" data-price="1200">
+      <img src="fanta.JPG" alt="Soft Drinks">
+      <img src="Soft.JPG" alt="Soft Drinks">
+      <img src="Soft2.JPG" alt="Soft Drinks">
+      <h3>Soft Drinks</h3>
+      <p>500ml - 1200 RWF</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Mini Cart Preview -->
+<section class="cart">
+  <h2>Mini Cart</h2>
+  <div id="cart-items"></div>
+  <div class="cart-total" id="cart-total">Total: 0 RWF</div>
+  <a href="cart.html" class="checkout">Go to Cart</a>
+</section>
+
+<footer>
+  <p>Contact us on WhatsApp: <a href="https://wa.me/250795878935?text=Hello%20Supermarket">+250 795 878 935</a></p>
+  <p>&copy; 2026 Supermarket Rwanda. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
